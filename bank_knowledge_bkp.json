@@ -1,0 +1,217 @@
+{
+  "bank_name": "Horizon Bank",
+  "tagline": "Banking for a better tomorrow",
+  "established": 1998,
+  "headquarters": "Mumbai, India",
+  "customer_care": "1800-XXX-XXXX",
+  "email": "support@horizonbank.in",
+
+  "savings_accounts": {
+    "regular_savings": {
+      "interest_rate": "3.5% per annum",
+      "minimum_balance": "₹1,000",
+      "zero_balance_option": true,
+      "debit_card": "Free Visa Classic Debit Card",
+      "free_atm_transactions": "5 per month at own ATMs, 3 at other bank ATMs"
+    },
+    "premium_savings": {
+      "interest_rate": "4.25% per annum",
+      "minimum_balance": "₹10,000",
+      "debit_card": "Free Visa Platinum Debit Card",
+      "perks": ["Priority banking", "Free RTGS/NEFT", "Free demand drafts", "Locker discount 25%"]
+    },
+    "senior_citizen_savings": {
+      "interest_rate": "4.75% per annum",
+      "minimum_balance": "₹500",
+      "additional_benefit": "0.5% extra over regular rates"
+    }
+  },
+
+  "fixed_deposits": {
+    "general_rates": [
+      {"tenure": "7 to 14 days",    "rate": "3.00%"},
+      {"tenure": "15 to 29 days",   "rate": "3.25%"},
+      {"tenure": "30 to 45 days",   "rate": "3.50%"},
+      {"tenure": "46 to 60 days",   "rate": "4.00%"},
+      {"tenure": "61 to 90 days",   "rate": "4.50%"},
+      {"tenure": "91 to 180 days",  "rate": "5.25%"},
+      {"tenure": "181 to 364 days", "rate": "5.75%"},
+      {"tenure": "1 year",          "rate": "6.50%"},
+      {"tenure": "2 years",         "rate": "6.75%"},
+      {"tenure": "3 years",         "rate": "7.00%"},
+      {"tenure": "5 years",         "rate": "7.25%"}
+    ],
+    "senior_citizen_additional": "0.50% extra on all tenures",
+    "premature_withdrawal_penalty": "1% on applicable rate",
+    "minimum_amount": "₹1,000",
+    "maximum_amount": "No limit",
+    "tax_saving_fd": {
+      "tenure": "5 years (lock-in)",
+      "rate": "7.25%",
+      "max_deduction_80C": "₹1,50,000"
+    }
+  },
+
+  "credit_cards": {
+    "horizon_classic": {
+      "annual_fee": "₹499 (waived on spend of ₹50,000 per year)",
+      "interest_rate_monthly": "3.49% per month (41.88% per annum)",
+      "minimum_due": "5% of total outstanding or ₹200 whichever is higher",
+      "credit_limit": "₹25,000 to ₹1,00,000",
+      "reward_points": "1 point per ₹100 spent",
+      "cash_advance_fee": "2.5% or ₹500 whichever is higher",
+      "late_payment_fee": "₹600 for outstanding above ₹10,000",
+      "foreign_transaction_fee": "3.5%",
+      "emi_conversion": {
+        "available": true,
+        "minimum_amount": "₹2,500",
+        "tenures": [3, 6, 9, 12, 18, 24],
+        "interest_rates": {
+          "3_months":  "13% per annum",
+          "6_months":  "14% per annum",
+          "9_months":  "14% per annum",
+          "12_months": "15% per annum",
+          "18_months": "15.5% per annum",
+          "24_months": "16% per annum"
+        },
+        "processing_fee": "1% of transaction amount or ₹199 whichever is higher",
+        "foreclosure_charge": "3% of principal outstanding"
+      }
+    },
+    "horizon_platinum": {
+      "annual_fee": "₹2,999 (waived on spend of ₹2,00,000 per year)",
+      "interest_rate_monthly": "3.25% per month (39% per annum)",
+      "minimum_due": "5% of total outstanding or ₹200 whichever is higher",
+      "credit_limit": "₹1,00,000 to ₹5,00,000",
+      "reward_points": "2 points per ₹100 spent, 5x on dining and travel",
+      "airport_lounge_access": "8 complimentary visits per year",
+      "emi_conversion": {
+        "available": true,
+        "minimum_amount": "₹2,500",
+        "tenures": [3, 6, 9, 12, 18, 24],
+        "interest_rates": {
+          "3_months":  "12% per annum",
+          "6_months":  "13% per annum",
+          "9_months":  "13.5% per annum",
+          "12_months": "14% per annum",
+          "18_months": "14.5% per annum",
+          "24_months": "15% per annum"
+        },
+        "processing_fee": "0.75% of transaction amount or ₹149 whichever is higher",
+        "foreclosure_charge": "2% of principal outstanding"
+      }
+    },
+    "interest_free_period": "Up to 50 days",
+    "billing_cycle": "Monthly (statement date on 15th of each month, due date on 5th of next month)",
+    "billing_note": "No interest charged if FULL outstanding is paid by due date. Interest applies from transaction date if minimum due only is paid."
+  },
+
+  "loans": {
+    "home_loan": {
+      "interest_rate": "8.50% to 9.25% per annum (floating, linked to RLLR)",
+      "rllr": "8.25% (Repo Linked Lending Rate)",
+      "tenure": "Up to 30 years",
+      "max_amount": "₹5 Crore",
+      "processing_fee": "0.50% of loan amount or ₹10,000 whichever is higher",
+      "prepayment_penalty": "Nil for floating rate loans",
+      "ltv_ratio": "Up to 90% for loans up to ₹30 Lakhs, 80% above"
+    },
+    "personal_loan": {
+      "interest_rate": "11.50% to 18.00% per annum",
+      "tenure": "12 to 60 months",
+      "max_amount": "₹25 Lakhs",
+      "processing_fee": "2% to 3% of loan amount",
+      "prepayment_penalty": "4% after 6 EMIs",
+      "min_salary": "₹20,000 per month"
+    },
+    "car_loan": {
+      "interest_rate": "8.75% to 12.00% per annum",
+      "tenure": "Up to 7 years",
+      "max_amount": "100% of ex-showroom price for new cars",
+      "processing_fee": "₹5,000 flat",
+      "prepayment_penalty": "Nil after 12 EMIs"
+    },
+    "education_loan": {
+      "interest_rate": "9.50% to 11.50% per annum",
+      "max_amount": "₹75 Lakhs",
+      "moratorium": "Course period + 1 year",
+      "collateral": "Required above ₹7.5 Lakhs"
+    }
+  },
+
+  "digital_banking": {
+    "net_banking": {
+      "features": ["Fund transfer (NEFT/RTGS/IMPS)", "Bill payments", "FD creation", "Loan EMI payment", "Statement download"],
+      "daily_transfer_limit": "₹10 Lakhs (NEFT/RTGS), ₹2 Lakhs (IMPS)"
+    },
+    "mobile_app": {
+      "name": "HorizonPay",
+      "platforms": ["iOS", "Android"],
+      "features": ["UPI payments", "QR scan", "Mini statement", "Card controls", "Chatbot support"],
+      "upi_daily_limit": "₹1 Lakh per transaction, ₹2 Lakhs per day"
+    },
+    "upi": {
+      "id_format": "mobile@horizonbank",
+      "daily_limit": "₹2 Lakhs",
+      "per_transaction_limit": "₹1 Lakh"
+    }
+  },
+
+  "charges_and_fees": {
+    "atm": {
+      "own_bank_atm": "5 free transactions per month, ₹20 per transaction after limit",
+      "other_bank_atm": "3 free transactions per month (metro), 5 (non-metro), ₹21 per transaction after"
+    },
+    "neft": {"below_10000": "₹2.50", "10000_to_100000": "₹5", "above_100000": "₹15"},
+    "rtgs": {"2lakh_to_5lakh": "₹25", "above_5lakh": "₹50"},
+    "imps": {"below_10000": "₹5", "10000_to_100000": "₹15", "above_100000": "₹25"},
+    "cheque_bounce": "₹350 per instance",
+    "duplicate_statement": "₹100 per statement",
+    "stop_payment": "₹100 per cheque",
+    "locker": {"small": "₹2,000/year", "medium": "₹4,000/year", "large": "₹8,000/year"}
+  },
+
+  "kyc_documents": {
+    "identity_proof": ["Aadhaar Card", "PAN Card", "Passport", "Voter ID", "Driving License"],
+    "address_proof": ["Aadhaar Card", "Passport", "Utility Bill (not older than 3 months)", "Bank Statement", "Rent Agreement"],
+    "income_proof_for_loans": ["Last 3 months salary slips", "Form 16", "Last 2 years ITR", "6 months bank statement"]
+  },
+
+  "dispute_and_grievance": {
+    "unauthorized_transaction_reporting_window": "Within 3 days for zero liability; 4-7 days for limited liability as per RBI guidelines",
+    "dispute_resolution_time": "7-10 working days",
+    "escalation_levels": ["Branch Manager", "Regional Grievance Officer", "Nodal Officer", "Banking Ombudsman"],
+    "ombudsman_contact": "bankingombudsman.rbi.org.in"
+  },
+
+  "faqs": [
+    {
+      "q": "How is credit card interest calculated?",
+      "a": "If you pay only the minimum due, interest is charged on the entire outstanding balance from the transaction date (not the statement date) at the monthly rate. For Horizon Classic card, this is 3.49% per month. For example, on ₹31,800 outstanding, if you pay ₹4,200 minimum due, interest will be approximately ₹31,800 × 3.49% = ₹1,109.82 for the next month on the unpaid amount."
+    },
+    {
+      "q": "Can I convert my credit card outstanding to EMI?",
+      "a": "Yes. Outstanding balances above ₹2,500 can be converted to EMI. For Classic card: 3-month EMI at 13% p.a., 6/9-month at 14%, 12-month at 15%, 18-month at 15.5%, 24-month at 16%. Processing fee: 1% or ₹199 whichever is higher. Call 1800-XXX-XXXX or use HorizonPay app to convert."
+    },
+    {
+      "q": "What happens if I don't pay my credit card bill?",
+      "a": "If you miss the due date: a late payment fee of ₹600 (for outstanding above ₹10,000) is charged. Interest at 3.49%/month accrues on the full outstanding from transaction date. Your credit score will also be negatively impacted after 30 days of non-payment."
+    },
+    {
+      "q": "How do I report a fraudulent transaction?",
+      "a": "Report immediately by calling 1800-XXX-XXXX (24x7) or blocking your card via HorizonPay app. Under RBI guidelines, if reported within 3 days, your liability is zero. If reported in 4-7 days, liability is capped at ₹10,000. File a complaint at the branch and get a written acknowledgment. Dispute is resolved within 7-10 working days."
+    },
+    {
+      "q": "How to update KYC / change name or address?",
+      "a": "Visit the nearest branch with original + self-attested copies of: new address/identity proof (Aadhaar, Passport etc.). For name change after marriage: marriage certificate + updated Aadhaar/Passport required. You can also initiate KYC update via net banking for address change using Aadhaar OTP-based verification."
+    },
+    {
+      "q": "What is the interest-free period on credit cards?",
+      "a": "Up to 50 days from the date of purchase if you pay the FULL outstanding amount by the due date. No interest-free period if you carry forward any balance from the previous month."
+    },
+    {
+      "q": "How to activate/unblock my net banking?",
+      "a": "Visit the nearest Horizon Bank branch with valid ID proof. Alternatively, you can reset via the HorizonPay app using your registered mobile number and debit card details. Customer care at 1800-XXX-XXXX can also guide you through the process."
+    }
+  ]
+}

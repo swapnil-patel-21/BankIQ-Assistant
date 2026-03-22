@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+openai
+python-dotenv
+httpx
+reportlab
+scikit-learn
+numpy
+python-multipart

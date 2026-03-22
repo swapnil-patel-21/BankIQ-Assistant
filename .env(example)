@@ -1,0 +1,5 @@
+API_KEY=YOUR-API-KEY
+API_ENDPOINT=
+
+# API version (optional, default is 2024-02-01)
+API_VERSION=2024-02-01
