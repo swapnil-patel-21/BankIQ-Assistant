@@ -26,7 +26,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 # ── Config ────────────────────────────────────────────────────────────────────
-KB_PATH   = Path(__file__).parent / "bank_knowledge.json"
+KB_PATH   = Path(__file__).parent / "kb/bank_knowledge.json"
 TOP_K     = 5      # number of chunks to retrieve per query
 MIN_SCORE = 0.05   # minimum similarity score to include a chunk
 
