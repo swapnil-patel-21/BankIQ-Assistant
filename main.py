@@ -52,7 +52,7 @@ from reportlab.pdfbase.ttfonts import TTFont
 # Noto Sans covers 500+ languages/scripts. Place font files next to main.py.
 # Download from: https://fonts.google.com/noto/specimen/Noto+Sans
 def _register_unicode_fonts():
-    font_dir = BASE_DIR  # same folder as main.py; change if fonts are elsewhere
+    font_dir = BASE_DIR / "fonts" # same folder as main.py; change if fonts are elsewhere
     font_map = [
         ("NotoSans",        "NotoSans-Regular.ttf"),
         ("NotoSans-Bold",   "NotoSans-Bold.ttf"),
@@ -97,7 +97,7 @@ from translator import (
 )
 
 # ─── App setup ────────────────────────────────────────────────────────────────
-app = FastAPI(title="Horizon Bank — Query Summarizer API", version="3.1.0")
+app = FastAPI(title="BankIQ Assistant — Query Summarizer APIs", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
@@ -115,7 +115,7 @@ app.mount("/pdfs", StaticFiles(directory=str(PDF_DIR)), name="pdfs")
 # ─── Serve frontend ───────────────────────────────────────────────────────────
 @app.get("/")
 def serve_ui():
-    return FileResponse(str(BASE_DIR / "index.html"))
+    return FileResponse(str(BASE_DIR / "template/index.html"))
 
 
 # ─── Model registry ───────────────────────────────────────────────────────────
@@ -159,7 +159,7 @@ def get_client() -> OpenAI:
 
 # ─── System prompt (uses RAG context, NOT full KB) ────────────────────────────
 def build_system_prompt(rag_context: str) -> str:
-    return f"""You are an expert AI assistant for Horizon Bank's customer service center.
+    return f"""You are an expert AI assistant for Quantum Bank's customer service center.
 You help Customer Service Representatives (CSRs) by analyzing customer queries and producing structured, actionable summaries.
 
 CRITICAL SCOPE RULE:
